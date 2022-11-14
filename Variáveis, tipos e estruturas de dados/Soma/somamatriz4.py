@@ -12,3 +12,8 @@ B = np.array([[6,5,4],
 
 soma = A + B
 print(soma) 
+
+# soma usando numpy
+
+soma = np.add(A,B)
+print(soma)
