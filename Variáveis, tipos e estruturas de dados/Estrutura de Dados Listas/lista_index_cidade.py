@@ -1,11 +1,10 @@
 # Criando uma lista cidade com o operador index 
 
 """
-extend: Adiciona itens de uma estrutura iterável, por exemplo, 
-se enviarmos um objeto puro, ele não sabe como adicionar, porém, 
-se enviarmos esse mesmo objeto dentro de uma lista, ele varrerá 
-a lista e adicionará esse objeto e, caso exista outros, os demais 
-dentro da lista.
+index() A função index() retorna o index de determinado elemento. 
+Se você procurar por um item que não existe um erro será lançado. 
+Por tanto, se o seu objetivo é saber se um item pertence a lista 
+utilize o operador de teste de inlclusão in .
 """
 
 cidades = ["Brasília", "São Paulo", "Rio de Janeiro", "Minas-Gerais" ]
