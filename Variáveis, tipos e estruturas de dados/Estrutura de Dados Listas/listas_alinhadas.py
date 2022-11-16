@@ -16,3 +16,7 @@ for i in range(5):
         listas[i].append(j) 
           
 print(listas)
+
+matrix = [[j for j in range(5)] for i in range(5)] 
+  
+print(matrix) 
