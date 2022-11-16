@@ -1,5 +1,5 @@
 # Unindo listas no Python
-# Para unir duas listas podemos simplesmente utilizar o símbolo de +
+# Usando range para rodar o for. i é uma variável auxiliar que irá percorrer a posição 0, 1 e 2 da nossas listas. Range(3) 
 
 lojas = ['Rio de Janeiro','São Paulo', 'Curitiba']
 vendas = [10000,20000,50000]
