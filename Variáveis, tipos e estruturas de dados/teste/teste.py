@@ -1,8 +1,9 @@
-# Atribuindo cada valor de uma lista a uma variável 
-lista3 = [12, 100, "Universidades"]
+vocabulario = ["iteracao", "selecao", "controle"]
+numeros = [17, 123]
+vazia = []
+lista_mista = ["ola", 2.0, 5*2, [10, 20]]
 
-item1 = lista3[0]
-item2 = lista3[1]
-item3 = lista3[2]
-
-print(item1, item2, item3)
+print(numeros)
+print(lista_mista)
+nova_lista = [numeros, vocabulario]
+print(nova_lista)
