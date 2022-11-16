@@ -1,2 +1,4 @@
+# Adicionando um elemento na lista
+
 listadomercado2 = [ "ovos", "farinha", "leite", "maçãs" ]
-retur = listadomercado2[1] 
+listadomercado2.append("carne") 
