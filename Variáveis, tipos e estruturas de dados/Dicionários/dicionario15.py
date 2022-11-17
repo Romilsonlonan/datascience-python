@@ -1,10 +1,9 @@
 """
-O get() é um método usado para pegar o valor de uma dada chave em um dicionário se 
-a chave estiver no dicionário, caso ela não exista, o método retorna None ou o valor 
-padrão passado por parâmetro.
+O operador "in" verifica se o operando a sua esquerda, está contido na lista a sua direita, 
+da mesma forma que o operador not in que verifica o contrário. Estes, são 2 operadores 
+nativo para verificar se um determinado objeto está contido numa lista. A palavra "in", do 
+Inglês, significa, "contido em"
 """
-
-# get retorna o valor associado com uma dada chave, assim o programa divide 12 por 6.
 
 meu_dicionario = {"gato":12, "cachorro":6, "elefante":23, "urso":20}
 if 'cachorro' in meu_dicionario:
@@ -12,12 +11,14 @@ if 'cachorro' in meu_dicionario:
 else: 
     print("não temos o cachorro em meu dicionário")
 
+# response: 6 dog é uma chave no dicionário.    
+
 #meu_dicionario = {"gato":12, "cachorro":6, "elefante":23, "urso":20}
 #if 'leão' in meu_dicionario:
 #    print(meu_dicionario['cachorro'])
 #else: 
 #    print("não temos o cachorro em meu dicionário")
 
-# response: não temos o cachorro em meu dicionário    
+# response: não temos o cachorro como uma chave no dicionário    
     
 
