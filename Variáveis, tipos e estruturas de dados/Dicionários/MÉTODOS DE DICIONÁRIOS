@@ -1,4 +1,17 @@
-Métodos de dicionários¶
+MÉTODOS DE DICIONÁRIOS¶
+
+Dicionários
+
+Todos os tipos de dados compostos que estudamos em detalhes até agora — strings, listas e 
+tuplas — são coleções sequenciais. Isto significa que os itens na coleção estão ordenados 
+da esquerda para a direita e eles usam números inteiros como índices para acessar os valores 
+que eles contêm.
+
+Dicionário é um tipo diferente de coleção. Ele é um tipo de mapeamento nativo do Python. Um 
+mapa é uma coleção associativa desordenada. A associação, ou mapeamento, é feita a partir de 
+uma chave, que pode ser qualquer tipo imutável, para um valor, que pode ser qualquer objeto 
+de dados do Python. 
+
 
 Dicionários possuem vários métodos nativos úteis. A seguinte tabela fornece um resumo 
 e mais detalhes podem ser encontrados em Python Documentation.
@@ -16,7 +29,31 @@ get           key                     Retorna o valor associado com a chave; ou 
 get           key,alt                 Retorna o valor associado com a chave; ou alt
 
 
+Glossário:
 
+CHAVE
+Um item de dados que é mapeado para um valor em um dicionário. As chaves são utilizadas 
+para acessar os respectivos valores em um dicionário.
+
+DICIONÁRIO
+Uma coleção de pares chave-valor que mapeiam chaves em valores. As chaves podem ser de 
+qualquer tipo imutável e os valores podem ser de qualquer tipo.
+
+GRÁFICO DE CHAMADAS
+Um gráfico consistindo de nós que representam chamadas de funções (ou invocações), e 
+arestas (linhas com setas) mostrando que chamadas deram origem a outras chamadas.
+
+MEMORANDO
+O armazenamento temporário de valores pré-computadas para evitar a duplicação da mesma computação.
+
+PAR CHAVE-VALOR
+Um dos pares de elementos de um dicionário. Os valores são acessados em um dicionário pelas suas 
+chaves.
+
+TIPO DE MAPEAMENTO 
+Um tipo de mapeamento é um tipo de dados composto por uma coleção de chaves e valores associados. 
+O único tipo de mapeamento nativo do Python é o dicionário. Dicionários implementam o tipo de dados 
+abstrato — vetores associativos <http://en.wikipedia.org/wiki/Associative_array>.
 
 
 
