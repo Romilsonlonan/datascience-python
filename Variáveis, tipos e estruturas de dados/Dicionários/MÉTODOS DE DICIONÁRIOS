@@ -1,0 +1,23 @@
+Métodos de dicionários¶
+
+Dicionários possuem vários métodos nativos úteis. A seguinte tabela fornece um resumo 
+e mais detalhes podem ser encontrados em Python Documentation.
+
+Método        Parâmetros             descrição 
+
+keys          nenhum                  Retorna uma vista das chaves no dicionário
+
+values        nenhum                  Retorna uma vista dos valores no dicionário
+
+items         nenhum                  Retorna uma vista dos pares chave-valor no dicionário
+
+get           key                     Retorna o valor associado com a chave; ou None
+
+get           key,alt                 Retorna o valor associado com a chave; ou alt
+
+
+
+
+
+
+
