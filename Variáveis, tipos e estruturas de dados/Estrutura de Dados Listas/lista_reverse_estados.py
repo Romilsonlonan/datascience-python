@@ -1,11 +1,9 @@
-# Criando uma lista estados com o operador insert 
+# Criando uma lista estados com o operador reverse 
 
 """
-o método insert (list insert python) insere um item numa 
-posição específica dentro da lista. Na hora de colocar os 
-argumentos você coloca o número do índice que o item será 
-inserido e em seguida o valor a ser adicionado.
-"""
+A função reverse() inverte a ordem da lista mas sem ordena-la, ou seja, 
+a ordem em que os elementos estão dispostos é indiferente, o que importa, 
+é fazer com que o último seja o primeiro e vice-e-versa."""
 
 estados = ["Brasília", "São Paulo", "Rio de Janeiro", "Minas-Gerais" ]
 estados.extend(["Bahia", "Mato Grosso do Sul"])
