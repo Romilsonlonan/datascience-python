@@ -6,8 +6,18 @@ padrão passado por parâmetro.
 
 # get retorna o valor associado com uma dada chave, assim o programa divide 12 por 6.
 
-mydict = {"gato":12, "cachorro":6, "elefante":23, "urso":20}
+meu_dicionario = {"gato":12, "cachorro":6, "elefante":23, "urso":20}
+if 'cachorro' in meu_dicionario:
+    print(meu_dicionario['cachorro'])
+else: 
+    print("não temos o cachorro em meu dicionário")
 
-resposta = mydict.get("gato")//mydict.get("cachorro")
+#meu_dicionario = {"gato":12, "cachorro":6, "elefante":23, "urso":20}
+#if 'leão' in meu_dicionario:
+#    print(meu_dicionario['cachorro'])
+#else: 
+#    print("não temos o cachorro em meu dicionário")
 
-print (resposta)
+# response: não temos o cachorro em meu dicionário    
+    
+
