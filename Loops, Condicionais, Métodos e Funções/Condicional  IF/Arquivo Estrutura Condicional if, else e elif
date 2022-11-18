@@ -127,3 +127,22 @@ fora dessa estrutura.
 
 Antes de ir para os próximos exemplos vamos aprender como usar operadores lógicos no Python, pois eles vão te ajudar muito nessas funções para poder fazer suas comparações.
 
+OPERADORES LÓGICOS
+
+variavel =
+
+if nome:
+    print('A variável nome não é vazia')
+
+if nome == <-operador lógico-> igual
+if nome != <-operador lógico-> diferente
+if nome >= <-operador lógico-> maior ou igual
+if nome <= <-operador lógico-> menor ou igual
+if nome > <-operador lógico-> maior
+if nome < <-operador lógico-> menor
+if a in nome <-operador lógico-> está dentro
+if a in lista
+if is true <-operador lógico-> é verdadeiro
+if true
+
+
