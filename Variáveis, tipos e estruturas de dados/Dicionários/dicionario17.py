@@ -26,3 +26,5 @@ for akey in meu_dicionario:
     if len(akey) > 3:
         total = total + meu_dicionario[akey]
     print(total)
+
+# O laço for itera sobre as chaves. Ele soma os valores das chaves que tem comprimento maior que 3.

@@ -1,0 +1,184 @@
+O que é tupla?
+
+Tupla é um tipo de estrutura de dados utilizada em Python que funciona de modo semelhante
+a uma lista, entretanto, com a característica principal de ser imutável. Isso significa 
+que quando uma tupla é criada não é possível adicionar, alterar ou remover seus elementos. 
+Geralmente, ela é utilizada para adicionar tipos diferentes de informações, porém, com a 
+quantidade de elementos definidos.
+
+Podemos utilizar uma tupla de dois elementos, por exemplo, para indicar a sigla do estado em 
+uma posição e o nome dele em outra. Portanto, ela é uma boa opção quando queremos trabalhar
+com informações diferentes em uma mesma variável e quando queremos que esses dados não sofram 
+alterações.
+
+Sua característica de "imutabilidade" oferece segurança nas informações armazenadas. Por isso, 
+uma das finalidades da tupla é armazenar uma sequência de dados que não será modificada em 
+outras partes do código.
+
+Entretanto, ela não é completamente imutável, pois quando armazena outro objeto, como uma lista, 
+os dados armazenados nesse elemento podem ser modificados. É preciso entender, porém, que nesse 
+caso não é alterado a estrutura da tupla, apenas o conteúdo desse objeto, que é passado por 
+referência.
+
+Imagine que temos uma tupla que contém dois elementos, uma string com o nome de uma pessoa, e uma
+lista com os nomes de seus filhos. Perceba que a lista de filhos pode e deve sofrer alterações, 
+caso a pessoa tenha um novo filho. Entretanto, a estrutura da tupla não foi alterada, pois ela 
+continua com os mesmos elementos e função.
+
+Como declarar tuplas?
+
+A declaração de tuplas em Python é muito simples, basta adicionar seus elementos entre parênteses 
+e separados por vírgula, conforme o exemplo a seguir:
+
+# tupla com parênteses / declaração implícita
+>>> tupla_numeros = (10, 20, 30)
+>>> tupla_numeros
+(10, 20, 30)
+>>> 
+#tupla sem parênteses / declaração implícita
+>>> tupla_nova = 10, 20, 30
+>>> tupla_nova
+(10, 20, 30) 
+
+É importante dizer que a utilização dos parênteses não é obrigatória. No entanto, é considerada uma 
+boa prática. O uso da vírgula é exigido, pois se ela tiver apenas um elemento, é preciso colocar uma
+vírgula depois dele para que o Python entenda que se trata de uma tupla. Já no caso de uma tupla vazia, 
+a representação será feita com parênteses sem nenhum elemento.
+
+# tupla com apenas um elemento
+>>> tupla_elemento = 10,
+>>> tupla_elemento
+(10,)
+# tupla vazia
+>>> tupla_vazia = ()
+>>> tupla_vazia
+()
+
+Outra forma de declarar uma tupla é por meio da função tuple(), que converte o valor atribuído em uma 
+tupla. Confira o exemplo no código fonte abaixo:
+
+# declaração explícita
+>>> nova_tupla = tuple('Teste')
+>>> nova_tupla
+('T', 'e', 's', 't', 'e')
+>>> tupla_vazia = tuple()
+>>> tupla_vazia
+()
+
+Há ainda a possibilidade de nomear os elementos de uma tupla. Dessa forma, facilita a sua aplicação, 
+pois permite o uso diretamente pelo índice. Isso é feito com a utilização de uma função chamada 
+namedtuple() da biblioteca collections do Python. Confira o exemplo, a seguir: 
+
+>>> from collections import namedtuple
+>>> Estados = namedtuple('Estados', ['sigla', 'nome'])
+>>> estado_sp = Estados('SP', 'São Paulo')
+>>> estado_sp
+Estados(sigla='SP', nome='São Paulo')
+>>> estado_sp.sigla
+'SP'
+>>> estado_sp.nome
+'São Paulo'
+
+Como saber se existem elementos em uma tupla?
+
+É possível pesquisar um elemento em uma tupla para verificar se ele existe. Para isso, utilizamos o 
+operador in, que retorna verdadeiro ou falso de acordo com o resultado da pesquisa. Confira o código 
+a seguir.
+
+# existe determinado elemento na tupla
+>>> elementos_tupla = ('São Paulo', 'Belo Horizonte', 'Fortaleza')
+>>> print('Belo Horizonte' in elementos_tupla)
+True
+# o elemento não existe na tupla
+>>> elemento_tupla = ('São Paulo', 'Belo Horizonte', 'Fortaleza')
+>>> print('Rio de Janeiro' in elemento_tupla)
+False
+Como contar os elementos de uma tupla?
+Também é possível verificar quantos elementos iguais existem em uma tupla. Confira o exemplo a seguir:
+
+>>> tupla_nomes = ('Maria', 'Paulo', 'Maria', 'João', 'Sérgio')
+>>> print (tupla_nomes.count('Maria'))
+2
+>>> print (tupla_nomes.count('Sérgio'))
+1
+>>> print (tupla_nomes.count('Pedro'))
+0
+
+Perceba que criamos uma tupla com alguns nomes repetidos e pedimos para imprimir na tela a quantidade 
+para alguns deles. Veja que no caso da busca pelo nome Pedro, que não existe na tupla, o valor 
+retornado é zero.
+
+Como exibir o índice do elemento de uma tupla?
+
+Para exibir o índice de um elemento de uma tupla em Python, utilizamos o método index(), que pode 
+conter até três argumentos:
+
+elemento: que será procurado na tupla;
+início: índice inicial da pesquisa, que é opcional;
+final: índice final da pesquisa, que é opcional.
+Confira o exemplo, a seguir:
+
+>>> tupla_nomes = ('Maria', 'João', 'Paulo', 'Pedro', 'Maria', 'Sérgio')
+>>> indice_tupla = tupla_nomes.index('Maria')
+>>> print (indice_tupla)
+0
+>>> indice_tupla2 = tupla_nomes.index('Maria', 0, 5)
+>>> print (indice_tupla2)
+0
+>>> indice_tupla3 = tupla_nomes.index('Maria', 2, 5)
+>>> print (indice_tupla3)
+4
+
+Note que o método index() retorna apenas o valor do índice referente a primeira ocorrência encontrada. 
+Entretanto, ele permite a pesquisa por pedaços da tupla, o que contribui para oferecer mais velocidade
+na busca por elementos em um grande volume de dados.
+
+Qual a diferença entre tuplas e listas?
+
+A principal diferença entre listas e tuplas é a imutabilidade. No entanto, as listas são objetos 
+mutáveis. Isso significa que é possível adicionar, remover e alterar seus elementos. Além disso, 
+ela contém métodos de iteração, como o append(), insert(), pop(), entre outros, que permitem a sua 
+modificação.
+
+Se tentarmos executar uma operação de modificação em uma tupla, será retornado um erro de execução 
+para informar que o objeto tuple não aceita uma atribuição de valores. Confira o exemplo na depuração 
+do código a seguir:
+
+>>> tupla_nomes = ('Maria', 'João', 'Paulo')
+>>> tupla_nomes[0] = 'Pedro'
+Traceback (most recent call last):
+ File "<pyshell#20>", line 1, in <module>
+   tupla_nomes[0] = 'Pedro'
+TypeError: 'tuple' object does not support item assignment
+
+Geralmente, utilizamos as listas para adicionar valores diferentes relacionados a uma mesma informação,
+isto é, uma sequência homogênea de dados. Uma lista de carros, por exemplo, poderá ter vários modelos 
+específicos. Portanto, mudam os nomes dos veículos, mas todos são carros. É importante dizer que também 
+é possível criar uma lista com tipos de dados diferentes.
+
+Já as tuplas Python são indicadas para dados heterogêneos, que contenham informações diferentes, como 
+o exemplo dos estados que mencionamos. Podemos dizer que a função das listas é ordenar dados em uma 
+sequência, enquanto a das tuplas é fornecer uma estrutura a eles.
+
+Outra diferença entre as listas e tuplas está no momento da declaração. As listas são indicadas entre 
+colchetes, enquanto as tuplas, entre parênteses. Confira o algoritmo a seguir e perceba a diferença 
+entre elas.
+
+>>> lista_nomes = ['Maria', 'João', 'Paulo']
+>>> print (lista_nomes)
+['Maria', 'João', 'Paulo']
+>>> type(lista_nomes)
+<class 'list'>
+>>> tupla_nomes = ('Maria', 'João', 'Paulo')
+>>> print (tupla_nomes)
+('Maria', 'João', 'Paulo')
+>>> type(tupla_nomes)
+<class 'tuple'>
+
+As listas podem ter o seu conteúdo reordenado de diferentes maneiras, enquanto a tupla, uma vez criada, 
+não existe a possibilidade de alterar a disposição de seus elementos.    
+
+Apesar de haver semelhanças entre as listas e tuplas, elas apresentam diferenças fundamentais, como a 
+imutabilidade. As tuplas em Python são uma excelente opção para estruturar dados em uma aplicação. Sua 
+utilização oferece mais segurança para armazenar elementos que não devem ser modificados.
+

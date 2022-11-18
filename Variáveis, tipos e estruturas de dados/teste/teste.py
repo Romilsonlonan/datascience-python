@@ -1,8 +1,8 @@
-emails_gerentes = {
-    "Iguatemi": "iguatemi@gmail.com",
-    "Plaza": "plaza@gmail.com",
-    "barra": "barra@gmail.com",
+# resultado = 1/2
 
-}
+x = 15
 
-print(emails_gerentes)
+if x % 2 == 0:
+    print(x, "e' par")
+else:
+    print(x, "e' impar")
