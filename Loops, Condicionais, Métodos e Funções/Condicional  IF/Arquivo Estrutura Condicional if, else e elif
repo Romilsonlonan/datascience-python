@@ -106,3 +106,24 @@ if sobrenome:
 response: A variável nome não é vazia
 
 
+""" Estrutura IF """
+
+Aqui temos um exemplo bem simples para iniciar e já te mostrar a estrutura da função. Estamos 
+definindo 2 variáveis e uma lista. Logo abaixo temos duas funções IF para que você veja o que 
+acontece. Na primeira quando deixamos somente if + a variável o Python vai verificar se essa 
+variável é vazia ou não. Ou seja, nesse caso ele só vai fazer a verificação se temos informação 
+ou não dentro dessa variável.
+
+Como temos 2 funções IF, as duas estão fazendo a mesma verificação, mas perceba que temos somente 
+1 resultado. Nesse caso a variável nome tem uma informação, que é Daniel, então é verdadeiro, pois 
+temos algo dentro da variável.
+
+No segundo caso, como não temos informação o Python vai ver que a variável é vazia, portanto, não 
+temos nada e com isso o resultado é falso. Como o resultado é falso o Python não vai passar pelo 
+código que está dentro do IF, ou seja, tudo que está dentro do IF será desconsiderado. Isso quer 
+dizer que só vamos ter o código dentro do IF sendo executado se a condição for verdadeira, caso 
+contrário ele vai simplesmente pular esse código e passar para a próxima linha de código que esteja 
+fora dessa estrutura.
+
+Antes de ir para os próximos exemplos vamos aprender como usar operadores lógicos no Python, pois eles vão te ajudar muito nessas funções para poder fazer suas comparações.
+
