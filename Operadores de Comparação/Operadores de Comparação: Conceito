@@ -1,0 +1,58 @@
+""" Operadores de comparação """
+
+Um assunto diretamente relacionado às estruturas de condição e repetição são os 
+operadores de comparação. Como o nome sugere, eles são usados para avaliar o 
+valor de duas ou mais expressões/variáveis e compará-las. Na linha 2 do código 
+que vimos anteriormente, por exemplo, comparamos a variável idade com o valor 20,
+por meio do operador menor que (<).
+
+Na Tabela 1 podemos ver todos os operadores de comparação da linguagem Python e 
+seu significado/aplicação.
+
+Símbolo	Definição
+==	Igual
+!=	Diferente
+>	Maior que
+<	Menor que
+>=	Maior ou igual que
+<=	Menor ou igual que
+
+Tabela 1. Operadores de comparação em Python
+
+É importante observar que o operador de comparação de igualdade é formado por dois 
+sinais de igual (==), enquanto um único sinal corresponde ao operador de atribuição.
+
+""" Estrutura de condição IF-ELIF-ELSE """
+
+Vimos anteriormente como utilizar o IF para executar uma ação caso uma condição seja 
+atendida. No entanto, nenhum comportamento específico foi definido para o caso de a 
+condição não ser satisfeita. Quando isso é necessário, precisamos utilizar a palavra 
+reservada else. Adicionalmente, se existir mais de uma condição alternativa que precisa 
+ser verificada, devemos utilizar o elif para avaliar as expressões intermediárias antes 
+de usar o else.
+
+O Código 2 apresenta uma demonstração dessas instruções.
+
+idade = int(input('Digite sua idade: '))
+if idade >= 10 and idade < 20:
+    print('Você é adolescente')
+elif idade >= 20 and idade < 30:
+    print('Você é jovem')
+elif idade >= 30 and idade <= 100:
+    print('Você é adulto')
+else:
+    print('Valor não encontrado!')
+
+# Código 2. Estrutura condicional completa com if-elif-else
+
+Na linha 2, verificamos se o valor informado está dentro de uma faixa de valores específica. 
+Caso a condição seja satisfeita, o programa executará a linha 3. Por outro lado, caso o 
+resultado não seja o esperado, então o programa verificará o próximo condicional, na linha 4 
+e, caso ele seja verdadeiro, a linha 5 será executada. O mesmo ocorre para a verificação da 
+linha 6. Por fim, se nenhuma das condições foi satisfeita, o programa executará o que é 
+especificado no bloco else.
+
+Estruturas de controle condicionais estão presentes na maioria das linguagens de programação 
+e representam uma parte fundamental de cada uma delas. Sendo assim, é muito importante conhecer 
+a sintaxe e o funcionamento dessas estruturas.    
+
