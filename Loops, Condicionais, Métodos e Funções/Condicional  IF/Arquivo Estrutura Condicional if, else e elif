@@ -127,7 +127,7 @@ fora dessa estrutura.
 
 Antes de ir para os próximos exemplos vamos aprender como usar operadores lógicos no Python, pois eles vão te ajudar muito nessas funções para poder fazer suas comparações.
 
-OPERADORES LÓGICOS
+# OPERADORES LÓGICOS
 
 variavel =
 
@@ -144,5 +144,64 @@ if a in nome <-operador lógico-> está dentro
 if a in lista
 if is true <-operador lógico-> é verdadeiro
 if true
+
+
+Agora você vai ter uma noção melhor de como utilizar o IF sem apenas verificar se temos ou não 
+informação na variável. Podemos fazer comparações se um valor ou texto é igual ao outro, se um 
+valor é maior, menor, igual, etc.
+
+valor = 10
+valor = 20
+
+if valor1 > valor2:
+    print('O valor1 é maior que o valor2')
+
+else:
+    print('O valor2 é maior que o valor1')
+
+""" Estrutura ELSE """
+
+Aqui temos outro exemplo já utilizando a função ELSE (que seria o senão). Isso quer dizer que vamos
+primeiramente testar a informação do IF e, se ela não for verdadeira, nós vamos para essa opção. Dessa
+forma, teremos 2 resultados para essa nossa comparação, um para verdadeiro e outro para falso. Nesse 
+caso, é possível observar que fizemos uma comparação entre 2 números, e, como a primeira comparação é 
+falsa, ele já foi para o ELSE. Então, você vai ler, se valor1 é maior do que o valor2, então executa o 
+que está dentro do IF; senão, executa o que está dentro do ELSE.
+
+Só que algumas vezes nós precisamos de mais de 2 resultados, como no caso de um semáforo de trânsito.
+Se tivermos verde, quer dizer que podemos passar; mas no amarelo já precisamos de atenção; e no 
+vermelho precisamos parar. Então, ao invés de utilizar 3 vezes a função IF, ou usar IF ELSE e depois 
+outro IF, nós temos a função ELIF, que seria basicamente a junção de um ELSE + IF.
+
+""" ELIF """
+
+cor = "alguma cor"
+
+if cor == 'verde':
+    print('Acelerar')
+
+elif cor =='amarelo':
+    print('Atenção')
+
+else:
+    print('Parar')
+
+
+""" Estrutura ELIF """
+
+Aqui temos uma variável com um texto e temos 2 opções, mas com 3 resultados. Primeiro, vamos verificar
+se o texto é verde; se for, temos o resultado “acelerar”. Se o texto não for verde, nós vamos para a 
+segunda comparação, que é se é amarelo. Então, se for verdadeiro, teremos o resultado “atenção”. Por 
+fim, temos o ELSE (senão), que independe da informação que temos, pois o ELSE só vai ser executado se 
+as opções anteriores forem falsas, então é basicamente o que sobra. Então, se não é verde nem amarelo, 
+só poderia ser vermelho. Assim, o resultado seria “parar”.
+
+OBS: Nesse caso, você percebeu que, mesmo colocando um texto qualquer, nós tivemos o resultado do que 
+seria o semáforo em vermelho. Isso acontece por conta do ELSE e porque não colocamos nenhum outro IF 
+para verificar se o texto é de fato vermelho. Então, é muito importante que você sempre verifique se 
+está cobrindo todas as possibilidades para que não tenha um resultado errado. Você vai ver muito isso 
+quando estiver debugando (verificando por erros) um código. Nesse caso, poderíamos ter colocado outro 
+ELIF para verificar se o texto é vermelho e, dentro do ELSE, informar que a informação não é válida ou
+algo do tipo.
 
 
