@@ -1,0 +1,108 @@
+ESTRUTURAS CONDICIONAIS NO PYTHON: COMO UTILIZÁ-LAS?
+
+O if-else no python é um recurso muito utilizado, sendo até mesmo básico para a programação de 
+qualquer aplicação. São conceitos essenciais e basilares na ciência da computação que ajudam a 
+controlar o fluxo de execução. Por isso, vamos conferir neste conteúdo mais informações sobre a 
+estrutura condicional no Python e um tutorial prático de como usar esses comandos.
+
+O que é a estrutura condicional Python if-else?
+
+A estrutura condicional é uma seção que ajuda a definir condições para a execução de determinados 
+blocos de comandos. Em vez de executar tudo de vez, sem nenhuma interrupção, o programa deve parar 
+para executar um teste e decidir qual caminho seguir. É como uma bifurcação, um momento importante 
+para tomada de decisão. Nesse caso, a decisão é o resultado de uma análise, de uma comparação. 
+
+Funciona assim: Se essa condição X é satisfeita, então execute esse bloco de comandos; senão, execute 
+esse outro bloco de comandos. Parte-se do pressuposto que o “senão” traz um bloco diferente, em 
+contraponto com o bloco do “se”. Assim, você pode direcionar o fluxo de execução para pular blocos e 
+executar exatamente o que se precisa. 
+
+Em um fluxograma, fica fácil entender como funciona um if-else: o IF será um elemento que faz o 
+teste, com ramificações à direita e à esquerda; depois do teste, o IF direciona para um lado do 
+fluxograma se o teste for válido; e para outro lado, se o teste for invalido.
+
+Esse teste envolve diversos tipos de dados. É possível fazer um teste lógico, por exemplo, para 
+analisar se uma variável é verdadeira ou falsa; um teste de comparação aritmética, para verificar 
+se uma variável é maior do que um número; e pode-se analisar igualdade entre variáveis, etc.
+
+O tipo de teste varia dependendo da lógica e do que se precisa.
+
+A estrutura condicional if-else no python é uma estrutura mais completa. O ELSE complementa o IF 
+para oferecer ainda mais robustez ao código (como veremos adiante). Contudo, é possível ter apenas 
+o IF, ou seja, uma condicional simples.
+
+Para que é usado o Python if-else?
+
+O if-else no Python é usado, sobretudo, para fazer uma execução andar, após análise de condições 
+preestabelecidas. Serve para avaliar todas as opções possíveis e evitar erros no código. Por exemplo, 
+considere que o programador não está usando devidamente a estrutura condicional. Então, o programa 
+pode cair em alguma situação de erro não tratada ou em alguma inconsistência não planejada. Isso fará 
+com que o programa funcione de modo inesperado.
+
+Digamos que precisamos de um programa simples para escrever uma mensagem de alerta sobre título 
+eleitoral para pessoas com mais de 16 anos de idade. No nosso exemplo, as que possuem menos de 16 
+anos precisam também de uma mensagem oficial para elas dizendo que não precisam de um título. Então, 
+como descobrir quais são as pessoas com a idade de votar e de fato enviar a mensagem correta? O if-else
+do python ajuda nessa situação.
+
+Pode-se fazer uma comparação aritmética no IF, buscando as pessoas com maior de 16 anos. Então, o 
+bloco de comandos será o print na tela sobre a lembrança de tirar o título. O ELSE poderá vir com 
+uma mensagem específica para aqueles que não estão na idade correta ainda. Caso o programador não 
+fizesse as estruturas condicionais corretamente, não seria possível enviar as mensagens certas, e 
+o programa iria falhar com seu principal propósito. Caso faltasse o ELSE, por exemplo, as pessoas 
+não maiores de 16 anos ficariam sem uma mensagem, o que, segundo os requisitos do nosso exemplo, 
+configura um erro. 
+
+O if-else serve também para que um código seja executado apenas algumas vezes, limitadamente, somente 
+quando necessário de fato. Em alguns casos, há uma estrutura complexa em que se precisa fazer uma 
+comparação dentro de um IF. Essa comparação só será feita caso o primeiro IF permita que o fluxo passe, 
+economizando tempo e recurso. 
+
+DIferenças na estrutura Python 
+
+Vamos entender melhor em termos de estrutura como funciona o if-else no Python.
+
+""" Else em Python """
+
+O ELSE surge depois do IF, em complemento lógico a ele. Então, não existe hipótese de escrever um ELSE 
+sem um IF antes. Geralmente, o ELSE não requer um teste, uma comparação, pois ele executa algo caso a 
+comparação do IF não passe. Portanto, você só precisa declarar o ELSE e adicionar o bloco de comandos. 
+
+""" IF em Python """
+
+Já o IF deve propor alguma coisa. É preciso escrever o IF e logo depois colocar a condição analisada. Então, em seguida, o bloco de comandos. 
+
+
+""" Elif em Python """
+
+O elif é uma estrutura intermediária dentro da seção if-else no python e deve vir como um complemento 
+a ambos. Quando você já tem um IF e um ELSE, mas precisa de uma condição para especificar outra regra, 
+pode usar o elif. Caso algo não tenha ficado exatamente claro, não se preocupe: estudaremos em detalhes 
+como se faz o código dessas estruturas em um tutorial prático. 
+
+Como Usar as Estruturas Condicionais no Python
+
+Antes de partir para a prática é bom entender o que é uma estrutura condicional, isso é bem simples, 
+mas é importante que entenda bem! Uma estrutura condicional, como o próprio nome já diz é uma estrutura 
+que vai analisar uma condição e baseado no resultado dessa condição é que vamos executar uma determinada 
+ação.
+
+Vamos iniciar com a função IF, traduzindo ela significa SE. Então fica mais fácil de entender.
+
+Um exemplo simples, SE 10 for maior que 5, então vamos executar uma ação, caso contrário não vamos 
+fazer nada. Então a função IF vai executar uma ação somente se a condição testada for verdadeira, nesse 
+caso vai executar tudo que estiver dentro dela (com a indentação, espaçamento que temos abaixo do IF 
+para mostrar que as informações fazem parte dele).
+
+nome = "Romilson"
+sobrenome = ''
+lista = []
+
+if nome:
+    print('A variável nome não é vazia')
+if sobrenome:
+    print('A variável sobrenome não é vazia')
+
+response: A variável nome não é vazia
+
+
