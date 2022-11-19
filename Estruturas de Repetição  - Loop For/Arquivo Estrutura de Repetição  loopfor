@@ -1,0 +1,134 @@
+ESTRUTURAS DE REPETIÇÃO NO PYTHON: SAIBA O QUE SÃO E COMO USAR
+
+A repetição em um código de Python não precisa ser algo manual e estafante. É possível configurar
+ recursos que simplificam o processo e fazem o trabalho nos bastidores.
+
+Nesse artigo vamos te mostrar as estruturas de repetição no Python. Vamos abordar a estrutura de repetição for e while para facilitar seus trabalhos e ajudar a elevar o nível de sua programação. 
+
+Confira!
+
+O que é estrutura de repetição em Python?
+Uma estrutura de repetição em Python é um recurso para desenvolver tarefas repetitivas em um loop contínuo. O loop funciona até uma condição ser satisfeita.
+
+É importante configurar devidamente essa condição para não cair em erros fatais em um programa. 
+
+O loop faz o que chamamos em programação de iteração, uma repetição que analisa alguma estrutura.
+
+Pense, por exemplo, em um parágrafo com 40 palavras. Em um dado projeto, é necessário percorrer cada letra para fazer uma verificação. Se você não puder contar com uma estrutura de repetição, terá que fazer isso do jeito mais difícil e braçal.
+
+A forma mais lógica é percorrer cada item de forma separada, depois de transformar o parágrafo em uma lista. Assim, você faz um IF para cada item e verifica todos até terminar a lista.
+
+Com essa operação, você perde muito tempo de codificação e muitas linhas de código em um processo difícil de ler e de manter. 
+
+Com uma estrutura de repetição no Python, por outro lado, tudo se torna mais simples e intuitivo.
+
+É só estabelecer uma condição de percorrer a lista até que ela termine e então fazer um único bloco IF para verificar o que precisa em todas as letras daquele parágrafo.
+
+O trabalho de centenas de linhas se torna apenas umas 5. Tudo mais fácil de ler e de alterar depois. 
+
+
+Para receber a planilha que usamos na aula no seu e-mail, preencha:
+
+Seu melhor e-mail
+Enviar
+Como funciona a estrutura de repetição?
+A estrutura de repetição em Python funciona como um bloco de código ideal para executar uma única operação em todos os dados. 
+
+Contudo, se você precisa alterar o código a depender da informação lida, você pode estabelecer subcondições (com diferentes IFs) para verificações específicas. 
+
+Caso você precise de um tratamento muito específico em cada item, o loop pode se tornar complexo demais. 
+
+Já em situações em que você precisa identificar qual é o dado antes de fazer uma comparação, o loop pode não ser a opção ideal.
+
+Afinal, o bloco de repetição já sabe qual é a condição ideal para testar antes mesmo de conhecer cada elemento. 
+
+Estruturas de Repetição no Python
+Uma estrutura de repetição em Python funciona da mesma maneira que uma estrutura em outras linguagens, como C e Java. A diferença básica é a sintaxe.
+
+Agora que já falamos sobre as definições, vamos de fato entender como são a sintaxe e a forma dessas estruturas.
+
+Para exemplo, vamos usar os loops For e While, que são os principais.
+
+A diferença entre eles está na organização sintática e na maneira como se relacionam com a condição de término. É preciso saber exatamente como usar cada um e em quais cenários eles se aplicam.
+
+Também falaremos sobre um problema comum quando se programa com loops, o loop infinito. Trataremos de estratégias para evitar essa situação e não atrasar o processo de desenvolvimento com erros fatais.
+
+Vamos começar com a estrutura de repetição for, que vai repetir uma ação de acordo com o que o usuário informar.
+
+Estrutura de repetição FOR
+Estrutura de repetição FOR
+Neste caso temos 3 exemplos em que temos a repetição utilizando o For. Ela começa com o for, em seguida temos uma variável para indicar o que vamos analisar.
+
+OBS: Pode ser uma variável qualquer, mas como no primeiro exemplo, nós colocamos uma variável com um nome fácil de identificar para que você não se perca daqui a alguns meses quando for rever o código.
+
+No primeiro exemplo nós estamos utilizando uma variável lojas, que é uma lista. Caso tenha interesse em saber mais sobre listas no Python basta clicar aqui!
+
+A função print no Python é simplesmente para que o usuário possa ver na tela o resultado, então isso facilita para verificar se o que está fazendo está correto antes de partir para a próxima etapa.
+
+Vamos agora para a utilização da estrutura de repetição while.
+
+Estrutura de Repetição WHILE
+Estrutura de Repetição WHILE
+Aqui já vamos utilizar a função input (para inserir uma informação no Python) para que o código solicite uma informação ao usuário e armazene na variável nome, ou seja, vamos ter uma interação com o usuário.
+
+Em seguida iniciamos com a estrutura while utilizando a variável nome, onde se ela for verdadeira (diferente de vazio) o código vai seguir perguntando o nome até que pare de escrever.
+
+Quando parar de escrever o código vai parar de rodar, no entanto, é MUITO IMPORTANTE tomar cuidado com a estrutura while, pois ela, diferente do for, não tem um fim definido.
+
+Isso quer dizer que você pode entrar em um loop infinito dependendo da maneira que escreve essa estrutura.
+
+Loop Infinito
+Loop Infinito
+Nesse caso veja que dentro da estrutura while nós temos apenas o input, mas ele não está atribuindo a informação a uma variável, ou seja, o nome que temos é o mesmo que colocamos lá atrás.
+
+Então se não estamos mudando esse nome, mesmo não escrevendo nada, porque não temos o input colocando o resultado na variável o programa não vai parar.
+
+Por isso é muito importante tomar cuidado com a estrutura while porque se não colocar um fim determinado vai ficar nessa estrutura para sempre.
+
+E dependendo da ação que estiver fazendo pode ser que o seu código venha a travar e parar sua aplicação.
+
+Conclusão das Estruturas de Repetição
+Nessa aula aprendemos sobre as estruturas de repetição do Python que vão te ajudar a fazer tarefas chatas e repetitivas sem que tenha que fazer diversas vezes de forma manual!
+
+São várias opções que ajudam na codificação, possibilitando a criação de lógicas personalizadas e intuitivas. 
+
+Assim, é possível reduzir os problemas no desenvolvimento e garantir melhor desempenho, com menos tempo necessário para tarefas desgastantes. 
+
+Agora você já pode fazer suas tarefas chatas que são repetitivas utilizando uma das duas estruturas de repetição que aprendeu hoje!
+
+Só tem que tomar cuidado para não entrar em um loop infinito!
+
+Confira outras publicações de Python para evoluir na programação!
+
+Heitor Catunda
+Expert em conteúdos da Hashtag Treinamentos. Auxilia na criação de conteúdos de variados temas voltados para aqueles que acompanham nossos canais.
+
+Procure o que você quiser sobre Excel, VBA, Power BI ou Python:
+
+Pesquisar por:
+ 
+Quer aprender tudo de Excel para se tornar o destaque de qualquer empresa?
+
+Preencha com o seu e-mail*
+Seu melhor e-mail
+QUERO ME CADASTRAR
+CATEGORIAS
+Ciência de Dados
+Dicas da Hashtag
+Excel Avançado
+Excel Básico
+Excel Intermediário
+Modelos de Planilhas
+Power Apps
+Power BI
+PowerPoint
+Python
+SQL
+VBA
+POSTS RECENTES
+Artes de Black Friday no PowerPoint
+Como Interpolar no Excel: aprenda 3 métodos simples
+O Que É Flask – Micro Framework De Desenvolvimento Web No Python.
+Nuvem de Palavras no Power BI – Gráfico Impressionador
+Como Atualizar o Excel e Como Habilitar o Office Insider para Obter as Novidades Antes?
+
