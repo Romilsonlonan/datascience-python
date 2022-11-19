@@ -204,4 +204,94 @@ quando estiver debugando (verificando por erros) um código. Nesse caso, poderí
 ELIF para verificar se o texto é vermelho e, dentro do ELSE, informar que a informação não é válida ou
 algo do tipo.
 
+"""IF COM FOR"""
+
+lista = ['Romilson', 'Katia', 'Jesus']
+
+for item in lista: 
+    if item == 'Romilson':
+        print('É Romilson')
+    else:
+        print('Não é Romilson')
+
+Response: 
+
+É Romilson
+Não é Romilson
+Não é Romilson
+
+""" Estrutura IF com FOR """
+
+Aqui temos outro exemplo utilizando o IF com FOR para que possamos fazer várias verificações dentro 
+de uma estrutura de repetição. Nesse caso, temos uma lista com alguns nomes e vamos percorrer todos 
+os itens dessa lista para verificar se o nome é igual a Daniel. Isso mostra que podemos utilizar a 
+função IF com ELSE, com ELIF e com FOR. Claro que em todos esses casos estamos utilizando a função 
+print no Python. Mas nada te impede de colocar um código que execute uma ação, que faça um cálculo, 
+que busque uma informação. São inúmeras as possibilidades. Aqui estamos apenas mostrando a maneira 
+mais didática para que você aprenda como essas estruturas funcionam aplicá-las nos seus códigos! Para 
+finalizar, vamos mostrar algo um pouco mais complexo: uma análise de ordens de uma empresa fictícia.
+
+
+CRIANDO UMA DECISÃO BASEADO EM ORDENS DE MANUTENÇÃO 
+
+ordens = ['20010102', '3030304050', '40005004305', '20067802', '3030356750',
+          '400050056775', '3030304050', '24505004305', '30067802', '4030356750']
+
+for ordem in ordens:
+    if ordem[0] == '2':
+        print(f'Ordem {ordem} - Manutenção Preventiva')
+    elif ordem[0] == '3':
+        print(f'Ordem {ordem} - Manutenção Corretiva')
+    else:
+        print(f'Ordem {ordem} - Manutenção Preditiva')
+
+
+Ordem 20010102 - Manutenção Preventiva
+Ordem 3030304050 - Manutenção Corretiva
+Ordem 40005004305 - Manutenção Preditiva
+Ordem 20067802 - Manutenção Preventiva
+Ordem 3030356750 - Manutenção Corretiva
+Ordem 400050056775 - Manutenção Preditiva
+Ordem 3030304050 - Manutenção Corretiva
+Ordem 24505004305 - Manutenção Preventiva
+Ordem 30067802 - Manutenção Corretiva
+Ordem 4030356750 - Manutenção Preditiva
+
+""" Junção das estruturas par um exemplo prático """
+
+Aqui nós temos uma lista com todas as ordens e precisamos identificar cada uma das ordens baseado no
+número inicial de cada uma delas. Por isso, estamos utilizando o [0] para obter a posição de número 
+0 (primeiro elemento) de cada uma dessas ordens.
+
+OBS: No Python, nós começamos a analisar os elementos da posição 0 em vez de começar na posição 1. Veja
+que rapidamente conseguimos fazer uma separação de todas as ordens sem a necessidade de analisar uma 
+por uma. Ou seja, com if-else no Python podemos fazer isso de forma automática!
+
+""" A indentação nas estruturas condicionais no Python if-else """ 
+
+Um aspecto interessante das estruturas condicionais no Python é o fato de que elas não envolvem chaves 
+ou demarcadores de início do bloco de comandos. Isso é feito de forma natural, com a chamada indentação. 
+Essa forma de codificar segue a filosofia de limpeza e minimalismo da linguagem. Por isso, depois de 
+escrever o IF e a condição, o programador deve usar o tab para começar o comando com um recuo na 
+próxima linha. Isso indica que aquele comando faz parte do IF. Caso o código não esteja indentado (um 
+erro muito comum), o compilador vai entender que aquele código está fora do IF e deve ser executado 
+somente quando o IF terminar. 
+
+""" Vantagens de programar com Python if-else """ 
+
+O if-else no python é uma estrutura extremamente moderna e útil. Além de usar a indentação como uma 
+forma de limpar o código, há também diversos atalhos para as comparações, o que torna a programação 
+bem eficaz e simples. Ou seja, a própria linguagem já entende as comparações e dispensa a escrita de 
+todos os elementos, como se faz geralmente em outras linguagens como C e Java. 
+
+""" Conclusão """
+
+Como vimos, é importante entender bem a estrutura if-else no Python e saber como aplicar e como 
+codificar de fato usando essa estrutura. Afinal, esse tipo de comando será usado praticamente em 
+todo programa. Com uma boa estrutura lógica, se garante menos erros no código, maior agilidade, o 
+cumprimento dos requisitos e sucesso nos projetos.
+
+
+
+
 
