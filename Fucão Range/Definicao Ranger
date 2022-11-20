@@ -1,0 +1,95 @@
+O que é a função Python range?
+A função Python range é uma função nativa da linguagem Python que é utilizada para gerar uma sequência numérica dentro de um intervalo determinado.
+
+Ela normalmente é utilizada como auxiliar da função for. Em Python, podemos repetir uma ação por um número específico de vezes usando um loop forcom a função range.
+
+Ela nos retorna números inteiros, com os quais podemos reproduzir com um loop for. O for executa um trecho do código ou argumento repetidamente por um número fixo de vezes. Assim, podemos repetir uma sequência de números produzidos pela função range utilizando-o.
+
+Para que você conheça as principais funções para aplicar no Python, preparamos um ebook totalmente gratuito sobre os primeiros passos com Python. Não perca tempo e baixe o seu agora, clicando na imagem abaixo!
+
+
+ebook gratuito primeiros passos com Python
+
+Como funciona a função Python range?
+A função Python range utiliza um gerador para produzir números. Entretanto, ela não produz todos os números de uma vez.
+
+O retorno dessa função é um objeto do tipo range. Esse objeto utiliza uma quantidade muito pequena de memória, independente do tamanho do range.
+
+Isso porque ela apenas armazena os valores de start, stop e step, fazendo os cálculos dos números conforme for requisitada.
+
+Ou seja, ela somente irá gerar um valor quando este for requisitado. Por isso ela é utilizada com o loop for. A cada iteração gerada pelo incremento da variável do loop, teremos o retorno do próximo número da função range.
+
+O principal benefício dessa característica é que utilizamos menos memória. Como a Python range somente produz os números um por um conforme o loop itera, poupamos uma boa quantidade de memória. Por isso, a função range é mais rápida e eficiente.
+
+A estrutura básica da Python range é:
+
+range([start], [stop], [step])
+
+Como podemos ver, nela temos três argumentos. Desses três, dois são opcionais. Os argumentos start e step ficam ao critério do programador, mas o argumento stop é obrigatório. Todos eles podem ser números positivos ou negativos.
+
+O start é a posição de início da sequência, o número em que ela irá começar. O valor padrão é 0, quando não for especificado. Por exemplo, na função range (1, 7), o start é o 0 e o stop é o 7.
+
+O stop, por sua vez, é o limite de geração dos números. É um número inteiro que especifica em qual posição a função deve parar.
+
+É importante salientar que a função range nunca inclui o número final nos resultados. Assim, como no exemplo anterior, a função iria parar no número 6. Os números gerados pelo range seriam [1, 2, 3, 4, 5, 6].
+
+O resultado contém os números de 1 até 7, porém excluindo o 7. Se quisermos incluir o número 7 nos resultados, precisamos criar um range inclusivo. Para fazer isso é bem simples, basta declarar que o valor do argumento stop é igual a stop+step.
+
+stop += step
+
+Já o step é o valor de incremento. O próximo número na sequência será gerado adicionando o valor definido no step ao número atual. Ou, em outras palavras, é a diferença entre o número anterior e posterior da sequência.
+
+Se o step é 5, por exemplo, a diferença entre cada número será 5. Em uma função range (0, 15, 5), o step é 5. Quando não especificado, o valor padrão é 1. O valor do step não pode ser zero. Do contrário, ocorrerá um erro do tipo ValueError.
+
+Usar um número negativo como argumento do step no range irá gerar uma sequência de números na ordem reversa. Na função range(3, -1, -1), por exemplo, teremos os números 3, 2 e 1, nessa ordem.
+
+Assim, você consegue criar um loop invertido utilizando valores negativos, fazendo com que o loop for execute a iteração na ordem reversa.
+
+A função Python range só funciona com números inteiros, então os argumentos precisam ser do tipo int. Não podemos usar variáveis Python string, floating numbers ou qualquer outro tipo como um dos argumentos.
+
+Exemplo da utilização do Python range
+Primeiramente, vamos ver um exemplo simples da utilização da Python range function, reunindo os conceitos aprendidos até aqui.
+
+Vamos gerar uma sequência simples utilizando os três argumentos:
+
+range(2, 10, 2)
+
+Para relembrar, nosso número de ínicio (argumento start) será 2, o número final (argumento stop) será 10, com incrementos de 2 (argumento step). Utilizaremos um for loop para exibir todos os números dentro do objeto range.
+
+O código ficará assim:
+
+
+x = range(2, 10, 2)
+
+for n in x:
+
+print (n)
+
+
+E os nossos resultados vão ser 2, 4, 6 e 8. Lembrando que o número 10 não será incluído, exceto caso criemos um range inclusivo, como no exemplo abaixo:
+
+
+start = 2
+
+stop = 10
+
+step = 2
+
+stop += step
+
+x = range(start, stop, step)
+
+for n in x:
+
+print (n)
+
+
+Assim, teremos como resultado a sequência 2, 4, 6, 8 e 10.
+
+Caso você queira utilizar a função range para gerar uma lista, precisamos convertê-la, já que o objeto range gerado é uma sequência de números inteiros imutáveis. Fazer isso é bem simples.
+
+Basta converter a função range() em uma lista colocando dentro do comando Python list().
+
+lista_exemplo = list(range(2, 10, 2))
+
+Dica bônus!

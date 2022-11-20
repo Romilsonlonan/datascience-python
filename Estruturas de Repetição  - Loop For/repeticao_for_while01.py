@@ -1,3 +1,5 @@
+# WHILE E FOR JUNTOS
+
 for i in range(2,30):
     j = 2
     counter = 0
