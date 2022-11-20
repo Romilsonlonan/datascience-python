@@ -1,4 +1,8 @@
-Os métodos são essencialmente funções incorporadas em objetos 
+Os métodos são essencialmente funções incorporadas em objetos e permitem executar ações específicas no objeto e podem também ter argumentos, exatamente como uma função.
+
+Os métodos são executados sob uma forma: 
+
+objeto.método(arg1, arg2, arg3, etc...)
 
 Com o Jupyter Notebook podemos ver rapidamente todos os métodos possíveis para um objeto, usando a 
 tecla TAB. Por exemplo, os métodos para o objeto lista são:
