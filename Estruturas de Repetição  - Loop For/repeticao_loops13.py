@@ -1,3 +1,5 @@
+# Usando clausula else para encerrar o loop while 
+
 x = 0
 
 while x < 10:
