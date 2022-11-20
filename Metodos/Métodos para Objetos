@@ -1,0 +1,54 @@
+Os métodos são essencialmente funções incorporadas em objetos 
+
+Com o Jupyter Notebook podemos ver rapidamente todos os métodos possíveis para um objeto, usando a 
+tecla TAB. Por exemplo, os métodos para o objeto lista são:
+
+--> append
+
+append(x) Adiciona um item ao fim da lista. Equivalente a a[len(a):] = [x] . Prolonga a lista, 
+adicionando no fim todos os elementos do argumento iterable passado como parâmetro.
+
+
+--> count
+
+A função count() retorna a quantidade de vezes que um mesmo elemento está contido numa lista. Essa é 
+uma excelente maneira que evita a implementação de um Laço de Repetição em busca de elementos iguais.
+
+
+--> extend
+
+extend: Adiciona itens de uma estrutura iterável, por exemplo, se enviarmos um objeto puro, ele não 
+sabe como adicionar, porém, se enviarmos esse mesmo objeto dentro de uma lista, ele varrerá a lista 
+e adicionará esse objeto e, caso exista outros, os demais dentro da lista.
+
+
+--> insert
+
+Assim, o método insert (list insert python) insere um item numa posição específica dentro da lista. Na 
+hora de colocar os argumentos você coloca o número do índice que o item será inserido e em seguida o 
+valor a ser adicionado.
+
+
+--> pop
+
+pop() é uma função embutida no Python que remove e retorna o último valor da lista ou o valor de índice
+fornecido. Parâmetro: índice ( opcional ) - O valor no índice é saiu e removido. Se o índice não for 
+fornecido, o último elemento é retirado e removido.
+
+
+--> remove
+
+O método remove() exclui valores ou objeto da lista usando valor e del e pop() exclui valores ou objeto 
+da lista usando um índice.
+
+--> reverse
+
+A função reverse() inverte a ordem da lista mas sem ordena-la, ou seja, a ordem em que os elementos 
+estão dispostos é indiferente, o que importa, é fazer com que o último seja o primeiro e vice-e-versa.
+
+--> sort
+
+O método sort() permite que você organize uma lista em ordem ascendente ou descendente. Ele 
+recebe argumentos somente nomeados: key e reverse . reverse determina se a lista é ordenada 
+em ordem ascendente ou descendente. key é uma função que gera um valor intermediário para 
+cada elemento.
