@@ -1,0 +1,119 @@
+O que são expressões Lambda no Python?
+
+As funções Lambda são chamadas de funções anônimas, mas o que são elas? Nada mais são do que funções 
+que o usuário não precisa definir, ou seja, não vai precisar escrever a função e depois utilizá-la 
+dentro do código.
+
+Sintaxe da função Lambda 
+
+A sintaxe da função Lambda no Python pode variar de acordo com o caso de uso. No exemplo que 
+aproveitamos, neste conteúdo (sobre cálculo de imposto), a fórmula ficou assim: = lambda x: x*0.3. 
+
+Por que usar funções Lambda?
+
+A grande vantagem de usar Lambda é criar um parâmetro para outra função. Você não precisa, por 
+exemplo, definir uma função para depois, passá-la para o map usá-la. Basta criar e passar o 
+Lambda adiante. Isso, consequentemente, já torna suas tarefas muito mais práticas, objetivas e 
+rápidas — ainda mais para quem precisa realizar muitos cálculos diariamente. 
+
+Mas, atenção: para conseguir usufruir das vantagens, é muito importante entender o começo de tudo. 
+Então, como funciona mesmo a Lambda? Ela recebe o que fica antes dos dois pontos como informação e, 
+depois, te passa um resultado. 
+
+Quando o seu uso não é indicado?
+
+A Lambda só não é indicada para quem ainda está aprendendo as ferramentas do Python. O melhor a 
+se fazer, nesse caso, é entender como o Python funciona. Só depois, então, vale a pena começar a 
+praticar mesmo a Lambda.
+
+Como Usar as Funções Lambda no Python
+
+Vamos ao exemplo para facilitar o entendimento, assim, fica mais claro como utilizar essa função e 
+como ela funciona.
+
+preco = 1000
+
+def calcular_imposto(preco):
+    return preco*0.3
+
+print(calcular_imposto(preco)) 
+
+300.0
+
+
+preco = 1000
+
+calcular_imposto2 = lambda x: x*0.3
+
+print(calcular_imposto2(preco))  
+
+300.0
+
+Exemplos de uma função comum e da função lambda
+Exemplos de uma função comum e da função lambda
+Exemplos de uma função comum e da função Lambda no Python
+
+Aqui, temos dois exemplos. No primeiro caso, estamos criando uma função para calcular um imposto 
+fictício de 30% sobre um valor. Já no segundo exemplo, nós estamos substituindo essa função que 
+tem apenas o objetivo de retornar à multiplicação pela função Lambda. Então, para a declaração e 
+utilização dessa função Lambda, vamos passar esse código:
+
+Lambda x : x*0.3
+
+Onde o primeiro x antes dos dois pontos significa o que a função vai receber como valor e o 
+segundo x é o que ele vai dar como resposta, ou seja, vai pegar esse valor que foi atribuído 
+e vai utilizar na função. Então esse uso é para facilitar e não ter que escrever mais linhas 
+de código. No entanto não é necessário que o usuário sempre faça essa troca, pode fazer com a 
+função do modo padrão sem problema algum! A diferença vem quando nós aplicamos essa função 
+dentro de outros métodos do Python, nesse caso teremos uma vantagem em utilizar a função lambda.
+
+
+precos = [125, 400, 15, 37]
+
+impostos = list(map(lambda x: x*0.3, precos))
+
+print(impostos)
+
+[37.5, 120.0, 4.5, 11.1]
+
+Função lambda dentro da função map
+
+
+Função map
+
+Pega uma lista de informações e aplica, sobre cada um dos valores dessa lista de informações, uma 
+função. Isso quer dizer que essa função vai pegar essa lista de informações e vai aplicar a função 
+para cada elemento. Então, sempre que for executar uma função para vários valores de uma lista, nós 
+vamos utilizar a função map.
+
+Essa função map precisa de duas informações para que ela funcione, a função e a lista de informações.
+
+
+Função list
+
+Nada mais é do que uma lista, ou seja, quer dizer que vamos receber ou passar uma lista de 
+informações para uma determinada variável. Nesse caso, estamos dizendo que a nossa variável 
+
+
+impostos vai receber uma lista.
+
+Veja que nesse exemplo foi bem mais simples a utilização da função Lambda do que fazer uma 
+definição de função e depois aplicar a função dentro da função map.
+
+Então, já economizamos tempo, código e ainda teremos um ganho na velocidade de processamento, pois, 
+teremos menos linhas de código a serem lidas.
+
+Fora que essa função map já ajuda bastante, pois não foi necessário criar uma função FOR para repetir a função para todos os elementos da lista.
+
+lambda no python
+
+
+Conclusão
+
+A utilização da função lambda é muito útil principalmente quando vamos utilizá-la como argumento de 
+outra função. Dessa forma não é necessário definir uma função para depois colocar a função e depois 
+chamá-la dentro da função que estamos inserindo.
+
+Outro ponto muito interessante é a utilização da função map que facilita bastante quando temos que 
+aplicar a mesma função a uma lista de informações. Agora que aprendeu como a função lambda funciona
+é hora de praticar para fixar o conteúdo da aula!
