@@ -1,3 +1,4 @@
+"""
 FUNÇÕES
 
 Em um nível mais fundamental, a construção de funções nos permite reutilizar código, sem ter que 
@@ -99,7 +100,7 @@ Podemos ter funções sem parâmetros. Por exemplo, podemos ter uma função que
 
         #oi
 
-""" Parâmetros de Função """
+ Parâmetros de Função
 
 Um conjunto de parâmetros consiste em uma lista com nenhum ou mais elementos que podem ser 
 obrigatórios ou opcionais. Para um parâmetro ser opcional, o mesmo é atribuído a um valor 
@@ -146,7 +147,7 @@ queiramos passar apenas a idade, devemos especificar o parâmetro:
 O interpretador irá acusar um erro, já que não passamos o atributo obrigatório nome.
 
 
-""" Função com retorno """
+Função com retorno
 
 E se ao invés de apenas mostrar o resultado, quisermos utilizar a velocidade média para fazer outro 
 cálculo, como calcular a aceleração? Da maneira como está, nossa função velocidade() não consegue 
@@ -199,7 +200,7 @@ Apesar da função possuir dois comandos return, ela tem apenas um retorno -- va
 outro. Quando a função encontra um comando return, ela não executa mais nada que vier depois dele 
 dentro de seu escopo.
 
-""" Retornando múltiplos valores """
+Retornando múltiplos valores
 
 Apesar de uma função executar apenas um retorno, em Python podemos retornar mais de um valor. Vamos 
 fazer uma função calculadora que vai retornar os resultados de operações básicas entre dois números: 
@@ -447,4 +448,4 @@ que um arquivo. Vamos verificar o tipo de forca:
 Veja que o tipo é um módulo. Antes de continuarmos com nosso jogo, vamos aprender um pouco mais sobre 
 arquivos e módulos. Vamos melhorar ainda mais nosso jogo da Forca e utilizar o que aprendemos de 
 funções para organizar nosso código.
-
+"""
