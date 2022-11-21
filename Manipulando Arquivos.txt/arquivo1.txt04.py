@@ -7,3 +7,4 @@ de bytes vazios para todos os bytes restantes para serem lidos.
 
 arq1 = open("arquivo1.txt", "r")
 print(arq1.read(21))
+
