@@ -1,3 +1,5 @@
+import pandas as pd 
+
 preco = 1000
 
 def calcular_imposto(preco):
