@@ -1,7 +1,7 @@
-listaB = [32,53,85,10,15,17,19]
-soma = 0
-for i in listaB:
-    double_i = i * 2
-    soma += double_i
+arq1 = open("arquivo1.txt", "r")
+print(arq1.read())
 
-print(soma)
+with open("arquivo1.txt", "r",) as arquivo1:
+    arq1 = arquivo1.read()
+    print(arq1)
+

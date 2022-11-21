@@ -1,0 +1,186 @@
+TRABALHAR COM ARQUIVOS DE TEXTO COM PYTHON – [LER, EDITAR E CRIAR]
+
+Resumo
+
+Nessa aula nós vamos te mostrar como trabalhar com arquivos de texto com Python, ou seja, vamos te 
+mostrar como você pode abrir, editar e até criar um arquivo de texto utilizando o Python.
+
+As vezes é bem útil automatizar esse tipo de procedimento com texto para que possa ter relatórios de 
+entradas ou até mesmo relatórios de atualização de algum processo que esteja fazendo.
+
+Trabalhar com Texto em Python
+
+Você alguma vez já tentou trabalhar com texto em Python ou com arquivos de texto com Python? Se ainda 
+não fez isso hoje nós vamos te mostrar como abrir, editar e criar um arquivo de texto com Python. E é 
+claro, vamos te mostrar uma dica muito importante para abrir seus arquivos e não ter problema quando 
+esquece de fechar o arquivo. Isso é muito útil, pois pode travar a execução caso seu arquivo continue 
+aberto enquanto tenta utilizá-lo!
+
+Arquivos de Texto com Python
+
+Antes de iniciar é muito importante que você lembre que sempre que abrir um arquivo você tem que fechar 
+ele antes de dar continuidade ao outro código, pois pode ter alguns problemas. O arquivo pode não salvar 
+corretamente, pode ter alguns problemas na hora da execução do código. Então a solução para resolver esse 
+problema e acabar não esquecendo de fechar o arquivo é utilizar a estrutura With no Python. Nós vamos 
+utilizar 3 arquivos de texto que estão disponíveis para download: email.txt, senha.txt e mensagem.txt.
+
+Com esses arquivos nós vamos poder fazer algumas modificações para que você possa aprender como trabalhar 
+com textos no Python!
+
+# read --> para arquivos simples (ex: senhas, tokens, informações unicas)
+
+with open("email.txt", "r") as arquivo:
+    email = arquivo.read():
+print(email)
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxXXXXXXXXXXXXXXXXX
+
+with open("senha.txt", "r") as arquivo:
+    email = arquivo.read()
+print(senha)
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxXXXXXXXXXXXXXXXXXX
+
+with open("mensagem.txt", "r", encoding="utf-8") as arquivo:
+    email = arquivo.readlines()
+
+for frase in texto:
+    if "faturamento" in frase:
+        print(email)
+
+Código para ler arquivos de texto com Python
+
+Aqui nós estamos utilizando a estrutura With para abrir arquivo de texto com Python. Veja que dentro 
+dessa estrutura nós temos 2 argumentos:
+
+--> O primeiro é o nome do arquivo (se estiver na mesma pasta basta colocar apenas o nome, sem o caminho 
+completo), 
+
+--> O segundo é o que vamos fazer com o arquivo.
+
+Utilizando o “r” nós vamos ler o arquivo (R vem de Read, que significa ler em inglês), então vamos 
+conseguir ler e mostrar na tela o conteúdo desse arquivo.
+
+Vamos agora a uma breve explicação desses códigos.
+
+Nos dois primeiros blocos nós estamos apenas abrindo os arquivos de e-mail e senha, atribuindo o seu 
+conteúdo a uma variável e em seguida mostrando esse conteúdo na tela. No terceiro bloco nós temos 
+algumas novidades. A primeira é o uso do encoding =”utf-8” que é para que o Python consiga ler 
+corretamente as informações que possuem acento.
+
+Veja a diferença utilizando com e sem o encoding.
+
+with open("mensagem.txt", "r") as arquivos:
+    texto = arquivo.read()
+    print(texto)
+
+with open("mensagem.txt", "r", encoding="utf-8") as arquivos:
+    texto = arquivo.read()
+    print(texto)
+
+Prezados, 
+
+O faturamento desse mês foi  de: R$15.000
+Qualquer dúvida que estiverem, é so falar.
+
+Att.,
+Romilson
+
+Testando a codificação para o padrão brasileiro
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxXXXXXXXXXXXXXXXXX
+
+É possível notar que sem essa codificação nós temos problemas com as letras que possuem acento ou 
+caractere especial, então é necessário utilizar essa codificação caso queira ver as informações da 
+forma correta!
+
+Outro ponto diferente que temos nesse bloco em relação aos outros é a utilização do arquivo.read() 
+para arquivo.readlines(). A primeira opção permite com que o usuário leia todo o conteúdo normalmente, 
+mas não permite a separação por linhas.
+
+Essa separação é muito útil quando vamos utilizar a estrutura de repetição for para mostrar na tela 
+apenas a linha que contém a informação “faturamento”. Dessa forma conseguimos fazer uma verificação 
+linha a linha e trazer o resultado desejado, caso contrário o Python não consegue buscar essa 
+informação de texto e não traz nenhum resultado.
+
+Vamos agora para o nosso segundo exemplo utilizando o segundo argumento do With como “w” (que vem de 
+Write, que significa escrever em inglês). Isso quer dizer que podemos editar arquivo de texto com 
+Python (escrever no arquivo/ substituir seu conteúdo) caso o arquivo já exista. Agora caso esse 
+arquivo ainda não exista o código vai criar arquivo de texto com Python e então escrever o que foi 
+solicitado. Isso quer dizer que se não temos o arquivo ele criar, e se já tivermos ele substitui o 
+conteúdo com a nova informação.
+
+# substitui por completo o texto  que está escrito 
+
+with open("email.txt", "r") as arquivo:
+    email = arquivo.read()
+print(email)
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxXXXXXXXXXXXXXXXXX
+
+with open("email.txt", "w") as arquivo:
+    arquivo.write("pythontxt@gmail.com")
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxXXXXXXXXXXXXXXXXXX
+
+with open("email.txt", "r") as arquivo:
+    email = arquivo.read()
+print(email)
+
+Escrevendo (substituindo) no arquivo de texto
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Aqui temos primeiramente a leitura do arquivo de e-mail para mostrar o conteúdo dele. Em seguida temos a 
+utilização do modo de escrita, onde alteramos o conteúdo desse arquivo. E por fim temos mais um código 
+para leitura novamente para verificar o conteúdo do arquivo. É possível notar que o conteúdo do arquivo 
+foi modificado, então agora temos a nova informação que substituiu a anterior. Agora você deve estar se 
+perguntando, “Mas então, como eu vou acrescentar uma informação sem apagar a informação anterior??”. Isso 
+é simples e é o nosso próximo exemplo. Para isso nós vamos utilizar o “a” como segundo argumento da 
+estrutura with(que vem de Append, que significa acrescentar em inglês). Então vamos poder adicionar no 
+arquivo a informação desejada sem apagar ou substituir o que já tínhamos nesse arquivo.
+
+with open("senha.txt", "a") as arquivos:
+    arquivo.write("\n789456")
+print(email)
+
+Adicionando (acrescentando) uma informação no arquivo de texto
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Aqui por exemplo estamos adicionando uma segunda senha ao nosso arquivo senha.txt. Então vamos 
+adicionar uma nova senha dentro desse mesmo arquivo.
+
+IMPORTANTE: Veja que antes da senha nós estamos escrevendo o \n que significa que estamos pulando uma 
+linha, ou seja, não vamos escrever logo a frente da última informação. Vamos escrever na linha logo 
+abaixo, assim as informações ficam organizadas e separadas dentro do arquivo.
+
+
+senha.txt - Bloco de Notas
+
+🗓️ Arquivo Editar Formatar Exibir Ajudar
+
+123456
+789456
+
+Arquivo de senha com 2 informações em linhas diferentes
+
+
+Veja que agora temos duas informações e elas estão em linhas diferentes, isso é muito importante para 
+separar esses dados. Pois se você não colocar o separador essas informações ficarão juntas e você não 
+vai conseguir identificar qual é uma senha ou outra.
+
+Conclusão
+
+Nessa aula nós te mostramos como trabalhar com arquivos de texto com Python. Agora você já sabe como 
+ler as informações de um arquivo, como substituir as informações no arquivo, como criar um arquivo e 
+já colocar informações dentro dele ou até mesmo adicionar informações em um arquivo já existente. Com 
+esses conhecimentos você já pode começar a praticar com os arquivos que tem para melhorar ainda mais 
+seus códigos. Então vai poder utilizar os arquivos em texto dentro dos códigos (utilizando o conteúdo 
+deles) ou até mesmo gravar informações dentro de arquivos para criar um relatório sempre que utilizar 
+seu código.
+
+As possibilidades são diversas, basta praticar e aplicar na sua rotina de programação!
+
+Hashtag Treinamentos
