@@ -1,3 +1,5 @@
+# Convertendo o dicionário para um objeto JSON
+
 import json
 
 dict = {'nome': 'Romilson Luis',
