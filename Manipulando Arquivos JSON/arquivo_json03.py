@@ -17,3 +17,4 @@ with open('arquivos/dados.json', 'r') as arquivo:
     data = json.loads(texto)
 
 print (data)
+print (data['nome'])
