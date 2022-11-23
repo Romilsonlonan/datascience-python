@@ -2,8 +2,6 @@ import json
 import os
 from urllib.request import urlopen
 
-
-
 response = urlopen("http://vimeo.com/api/v2/video/57733101.json").read().decode('utf8')
 data = json.loads(response)[0]
 
