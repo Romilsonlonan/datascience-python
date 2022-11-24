@@ -2,20 +2,20 @@
 
 import os, sys
 
-# First go to the "/var/www/html" directory
+# Primeiro vá para o diretório "/var/www/html" 
 os.chdir("/var/www/html" )
 
-# Print current working directory
+# Imprimir diretório de trabalho atual
 print ("Current working dir : %s" % os.getcwd())
 
-# Now open a directory "/tmp"
+# Agora abra um diretório"/tmp"
 fd = os.open( "/tmp", os.O_RDONLY )
 
-# Use os.fchdir() method to change the dir
+# Use o método os.fchdir() para alterar o diretório
 os.fchdir(fd)
 
-# Print current working directory
+# Imprimir diretório de trabalho atual
 print ("Current working dir : %s" % os.getcwd())
 
-# Close opened directory.
+# Feche o diretório aberto.
 os.close( fd )
