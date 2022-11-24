@@ -7,5 +7,5 @@ sequencial e um item da sequência correspondente. lista, não geram novas lista
 
 lista = ['Marketing', 'Tecnologia', 'Business']
 
-for i, item in enumerate('Isso é uma string!!!'):
+for i, item in enumerate(range(10)):
     print(i, item)

@@ -1,0 +1,130 @@
+1) Concatenamos strings com o sinal +, exemplo: "Spam " + "and" + " eggs"
+
+Quando concatenamos com um número, precisamos fazer a conversão, exexemplo: "The value of pi is around " + str(3.14)
+
+Escapamos (scape) caracters com o sinal \, exemplo: 'There\'s a snake in my boot!'
+
+Pesquisando a string
+Podemos pesquisar um string com o operador in, exemplo
+
+"b" in "abc"     # True
+"d" in "abc"     # False
+"d" not in "abc" # True
+"b" not in "abc" # False
+Métodos comuns para strings
+Método len()
+Mostra o tamanho da string
+
+s = "foo"
+len(s)
+# 3
+Método upper()
+Caixa alta.
+
+"foo".upper() # FOO
+Método lower()
+Caixa baixa.
+
+"ALFA".lower() # alfa
+Método str()
+Converte em string.
+
+num = 123
+type(num)      # <class 'int'>
+type(str(num)) # <class 'str'>
+Método isalpha()
+Retorna False se a string contiver algum caracter que não seja letras
+
+"abc".isalpha()  # True
+"1fg".isalpha()  # False
+"123".isalpha()  # False
+"/+)".isalpha()  # False
+Método strip()
+Retira espaços em branco no começo e no fim
+
+" sobrando espaços ".strip()      # 'sobrando espaços'
+"  sobrando espaços   ".strip()   # 'sobrando espaços'
+Método join()
+Junta cada item da string com um delimitador especificado.
+
+É o inverso do split().
+
+", ".join("abc")
+# 'a, b, c'
+Aceita listas.
+
+"-".join(['flavio', 'alxandre', 'micheletti'])
+# 'flavio-alexandre-micheletti'
+Método split()
+Separa uma string conforme um delimitador.
+
+É o inverso do join().
+
+s = 'n o m e'
+s.split()      # ['n', 'o', 'm', 'e']
+s.split(" ")   # ['n', 'o', 'm', 'e']
+s.split("")    # ValueError: empty separator
+
+
+
+
+2) O básico sobre estrutura condicionais (Python)
+Segundo a documentação do Python, o protótipo da estrutura if é demonstrado abaixo.
+
+if_stmt ::=  "if" expression ":" suite
+         ( "elif" expression ":" suite )*
+         ["else" ":" suite]
+Quer dizer que podemos fazer if’s simples…
+
+# exemplo 1
+if expressao: comando
+
+# exemplo 2
+if expressao:
+    comando
+If’s comuns…
+
+if expressao:
+    comando
+else:
+    comando
+
+# sintaxe alternativa
+if expressao: comando
+else: comando
+Laço “else if”…
+
+if expressao1:
+    comando
+elif: expressao1
+    comando
+else:
+    comando
+
+# sintaxe alternativa
+if expressao: comando
+elif: comando
+else: comando
+
+
+O operador [:] representa o total da lista (ou string).
+
+E há ainda o operador [a:b:n] que representa de n em n itens.
+
+Operações com sequências
+Operadores	Descrição
+s[-i]	acesso a um item pelo final
+s+z	concatenação
+s*n n	cópias de s concatenadas
+i in s	teste de inclusão
+i not in s	teste de inclusão negativo
+
+
+Funções nativas p/ sequências
+Operadores	Descrição
+len(s)	número de elementos
+min(s)	valores mínimo contido em s
+max(s)	valores máximo contido em s
+sorted(s)	devolve uma lista com itens de s em ordem ascendente
+reversed(s)	retorna um iterador para percorrer os elementos do último ao primeiro
+
