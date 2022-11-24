@@ -1,4 +1,77 @@
-1) Concatenamos strings com o sinal +, exemplo: "Spam " + "and" + " eggs"
+1) Built in fuctions
+
+Exemplos práticos das funções internas de Python
+
+abs
+all
+any
+ascii
+bin
+bool
+bytearray
+bytes
+callable
+chr
+classmethod
+compile
+complex
+delattr
+dict
+dir
+divmod()
+enumarate
+eval
+exec
+filter
+float
+format
+frozenset
+getattr
+globals
+hasattr
+hash
+help
+hex
+id
+input
+int
+isinstance
+issubclass
+iter
+len</a>
+list
+locals
+map
+max
+memoryview
+min
+next
+object
+oct
+open
+ord
+pow
+print
+property
+range</a>
+repr
+reversed
+round
+set
+setattr
+slice
+sorted
+staticmethod
+str
+sum
+super
+tuple
+type
+vars
+zip
+__import__
+
+2) Concatenamos strings com o sinal +, exemplo: "Spam " + "and" + " eggs"
 
 Quando concatenamos com um número, precisamos fazer a conversão, exexemplo: "The value of pi is around " + str(3.14)
 
@@ -68,7 +141,7 @@ s.split("")    # ValueError: empty separator
 
 
 
-2) O básico sobre estrutura condicionais (Python)
+3) O básico sobre estrutura condicionais (Python)
 Segundo a documentação do Python, o protótipo da estrutura if é demonstrado abaixo.
 
 if_stmt ::=  "if" expression ":" suite
