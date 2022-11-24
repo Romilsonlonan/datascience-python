@@ -4,6 +4,8 @@ elemento.
 """
 
 from functools import reduce
+from IPython.display import Image
+Image('arquivos/reduce.png')
 
 lista = [47, 11, 42, 13]
 
