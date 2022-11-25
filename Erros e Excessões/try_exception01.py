@@ -1,5 +1,4 @@
-#8 + 's'
-
+# 8 + 's'
 """
 Traceback (most recent call last):
 Traceback - rastrear) (última chamada mais recente):

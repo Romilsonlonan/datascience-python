@@ -9,10 +9,3 @@ seq = ['a', 'b', 'c']
 
 for indice, valor in enumerate(seq):
     print(indice, valor)
-
-# Ira retornar com Iterator com as demais funções zip, map e filter
-# alterar o formato para list
-#print(enumerate(seq))
-
-#retorna tuplas. Cada tupla retorna com o índice e o elemento 
-#print(list(enumerate(seq)))

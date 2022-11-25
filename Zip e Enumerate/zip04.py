@@ -1,3 +1,10 @@
+"""
+FUNÇÃO ZIP
+
+Esta função retorna uma lista de tuplas, onde a i-ésima tupla contém o i-ésimo 
+elemento de cada um dos argumentos.
+"""
+
 # Criando 2 dicionaŕios 
 
 d1 = {'a':1, 'b':2}

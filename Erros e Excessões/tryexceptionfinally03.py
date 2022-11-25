@@ -9,6 +9,6 @@ def askint():
             print("Obrigado por digitar um numero!")
             break
         finally:
-            print("Fim da execução")
+            print("Fim da execução!")
         print(val)
 print(askint())
