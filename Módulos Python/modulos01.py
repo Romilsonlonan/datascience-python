@@ -35,3 +35,4 @@ print(vetor1)
 
 # Verificando o formato do array 
 print(vetor1.shape)
+# (9,) --> Array unidimencional 
