@@ -1,3 +1,12 @@
-sum = lambda x, y:   x + y  
-print(sum(2,9))
+import numpy as np    
+
+np.__version__      
+print(np.__version__)                                                                                                                                                                                                                                                    
+
+help(np.array)
+print(help(np.array))
+
+
+
+
 
