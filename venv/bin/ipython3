@@ -1,5 +1,5 @@
 #!/bin/sh
-'''exec' "/home/romilson/Projetos e Treinamentos/DataScience-Python/venv/bin/python" "$0" "$@"
+'''exec' "/home/romilson/Projetos e Treinamentos/DataScience-Python/venv/bin/python3" "$0" "$@"
 ' '''
 # -*- coding: utf-8 -*-
 import re

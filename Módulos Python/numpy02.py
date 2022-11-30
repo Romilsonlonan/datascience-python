@@ -32,7 +32,6 @@ print(matriz2.itemsize)
 
 matriz2.nbytes
 print(matriz2.nbytes)
-
 print(matriz2[1, 2])
 
 matriz2[1, 0] = 100
@@ -47,9 +46,6 @@ matriz3 = np.array([[24, 76], [35, 89]], dtype=float)
 print(matriz3)
 print(matriz3.itemsize)
 print(matriz3.nbytes)
-
-
-
 
 
 
