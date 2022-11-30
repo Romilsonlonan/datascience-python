@@ -1,3 +1,5 @@
+# Fazendo Slicing (fatiamento) em arrays
+
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -64,7 +66,7 @@ print(np.concatenate((v, w), axis=0))
 
 # Copiando arrays
 r = np.copy(v)
-print(r(np.copy))
+print(r)
 
 
 
