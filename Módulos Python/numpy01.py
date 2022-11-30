@@ -56,3 +56,5 @@ print(np.logspace(0, 5, 10))
 
 
 
+
+
