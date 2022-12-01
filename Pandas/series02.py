@@ -9,8 +9,6 @@ Obj = Series([67, 78, -56, 13])
 print(Obj)
 
 print(type(Obj))
-print(Obj.values)
-print(Obj.index)
 
 Obj2 = Series([67, 78, -56, 13], index = ['a', 'b', 'c', 'd'])
 print(Obj2)

@@ -28,7 +28,7 @@ print(pd.notnull(Obj4))
 
 print(Obj3 + Obj4)
 
-# Alterando o nome do índice e do objeto
+# Alterando o nome do índice e do objeto (Series) do pandas
 Obj4.name = 'população'
 Obj4.index.name = 'esporte'
 print(Obj4)
