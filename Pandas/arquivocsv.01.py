@@ -5,5 +5,3 @@ import pandas as pd
 
 df = pd.read_table('Pandas/direitos_humanos.csv', sep = ',')
 print(df)
-
-%%!head Pandas/direitos_humanos.csv
